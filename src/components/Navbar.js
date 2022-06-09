@@ -9,23 +9,28 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import logo from "../assets/logo3.png"
-
+import resume from "../assets/resume.pdf"
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     const handleClick = () => setNav(!nav)
     return (
-        <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#08192f] text-gray-300'>
+        <div className='fixed w-full h-[80px] flex justify-between items-center px-10 bg-[#08192f] text-gray-300'>
             <div>
                 <img className='w-60' src={logo} alt="Logo" />
             </div>
             <div>
                 <ul className='hidden md:flex'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>Home</li>
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>About</li>
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>Skills</li>
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>Projects</li>
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>Contact</li>
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
+                        <a download="Resume Of Md Rakibul Islam"
+                            href={resume}>Download Resume</a>
+
+                    </li>
                 </ul>
             </div>
             {/* hamberger */}
@@ -50,7 +55,8 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            target="_blank"
+                            href='https://www.linkedin.com/in/mdrakibulislam6/'
                         >
                             Linkedin <FaLinkedin size={30} />
                         </a>
@@ -58,7 +64,8 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            target="_blank"
+                            href='https://github.com/rakibulislamrabby'
                         >
                             Github <FaGithub size={30} />
                         </a>
@@ -66,7 +73,8 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            target="_blank"
+                            href='https://mail.google.com/'
                         >
                             Email <HiOutlineMail size={30} />
                         </a>
@@ -74,7 +82,9 @@ const Navbar = () => {
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                         <a
                             className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            download="Resume Of Md Rakibul Islam"
+                            // target="_blank"
+                            href={resume}
                         >
                             Resume <BsFillPersonLinesFill size={30} />
                         </a>
