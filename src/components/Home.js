@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiArrowNarrowRight } from 'react-icons/hi';
 import Link from 'react-scroll/modules/components/Link';
-import profile from "../assets/profile.png"
+// import profile from "../assets/profile.png"
 const Home = () => {
     return (
         <div name='home' className='w-full h-screen bg-[#0a192f]'>
