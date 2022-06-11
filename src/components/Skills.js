@@ -11,7 +11,7 @@ import Tailwind from '../assets/tailwind.png';
 import Mongo from '../assets/mongo.png';
 const Skills = () => {
     return (
-        <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300 pt-24 pb-24'>
+        <div id='skills' className='w-full h-screen bg-[#0a192f] text-gray-300 pt-24 pb-24'>
             {/* Container */}
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
                 <div>

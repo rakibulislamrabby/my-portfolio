@@ -10,7 +10,8 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import logo from "../assets/logo3.png"
 import resume from "../assets/resume.pdf"
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
+import { Routes, Route, Link } from "react-router-dom";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -23,28 +24,33 @@ const Navbar = () => {
             <div>
                 <ul className='hidden md:flex'>
                     <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
-                        <Link to='home' smooth={true} duration={500}>
+                        <Link to='/' >
                             Home
                         </Link>
                     </li>
                     <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
-                        <Link to='about' smooth={true} duration={500}>
+                        <a href='#about' smooth={true} duration={500}>
                             About
-                        </Link>
+                        </a>
                     </li>
                     <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
-                        <Link to='skills' smooth={true} duration={500}>
+                        <a href='#skills' smooth={true} duration={500}>
                             Skills
-                        </Link>
+                        </a>
                     </li>
                     <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
-                        <Link to='project' smooth={true} duration={500}>
+                        <a href='#project' smooth={true} duration={500}>
                             Projects
-                        </Link>
+                        </a>
                     </li>
                     <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
-                        <Link to='contact' smooth={true} duration={500}>
+                        <a href='#contact' smooth={true} duration={500}>
                             Contact
+                        </a>
+                    </li>
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
+                        <Link to="/blog" smooth={true} duration={500}>
+                            Blog
                         </Link>
                     </li>
                     <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
@@ -64,30 +70,39 @@ const Navbar = () => {
                     : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
             }>
 
-                <li className='py-6 text-4xl' >
-                    <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+                <li className='py-6 text-3xl' >
+                    <Link to='/' onClick={handleClick} >
                         Home
                     </Link>
                 </li>
-                <li className='py-6 text-4xl' >
-                    <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+                <li className='py-6 text-3xl' >
+                    <a href='#about' onClick={handleClick} smooth={true} duration={500}>
                         About
-                    </Link>
+                    </a>
                 </li>
-                <li className='py-6 text-4xl' >
-                    <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+                <li className='py-6 text-3xl' >
+                    <a href='#skills' onClick={handleClick} smooth={true} duration={500}>
                         Skills
-                    </Link>
+                    </a>
                 </li>
-                <li className='py-6 text-4xl' >
-                    <Link onClick={handleClick} to='project' smooth={true} duration={500}>
+                <li className='py-6 text-3xl' >
+                    <a href='#project' onClick={handleClick} smooth={true} duration={500}>
                         Projects
+                    </a>
+                </li>
+                <li className='py-6 text-3xl' >
+                    <a href='#contact' onClick={handleClick} smooth={true} duration={500}>
+                        Contact
+                    </a>
+                </li>
+                <li className='py-6 text-3xl' >
+                    <Link to="/blog" onClick={handleClick} smooth={true} duration={500}>
+                        Blog
                     </Link>
                 </li>
-                <li className='py-6 text-4xl' >
-                    <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
-                        Contact
-                    </Link>
+                <li className='py-6 text-3xl' >
+                    <a onClick={handleClick} download="Resume Of Md Rakibul Islam"
+                        href={resume}>Download Resume</a>
                 </li>
             </ul>
 
