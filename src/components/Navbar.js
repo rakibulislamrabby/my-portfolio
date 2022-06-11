@@ -54,6 +54,12 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
+                        <Link to="/aboutMe">
+                            About Me
+                        </Link>
+                    </li>
+
+                    <li className='hover:bg-pink-600 p-3 rounded-xl font-bold'>
                         <a download="Resume Of Md Rakibul Islam"
                             href={resume}>Download Resume</a>
 
@@ -98,6 +104,9 @@ const Navbar = () => {
                 <li className='py-6 text-3xl' >
                     <Link to="/blog" onClick={handleClick} smooth={true} duration={500}>
                         Blog
+                    </Link>
+                    <Link to="/aboutMe" onClick={handleClick} smooth={true} duration={500}>
+                        About Me
                     </Link>
                 </li>
                 <li className='py-6 text-3xl' >

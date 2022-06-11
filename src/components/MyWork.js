@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import useProject from '../hooks/useProjects';
 // import { Routes, Route, Link } from "react-router-dom";
-import MyWorkCard from './MyWorkCard';
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
@@ -9,8 +7,6 @@ import { Link } from 'react-router-dom';
 
 
 const MyWork = () => {
-    const [projects] = useProject()
-
     return (
         <div id='project' className='w-full md:h-screen text-gray-300 bg-[#0a192f] pt-24'>
             <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
