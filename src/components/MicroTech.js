@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 import img1 from "../assets/project/01.png"
 import img2 from "../assets/project/02.png"
 import img3 from "../assets/project/img3.JPG"

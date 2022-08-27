@@ -76,12 +76,12 @@ const Navbar = () => {
                     : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
             }>
 
-                <li className='py-6 text-3xl' >
+                <li className='py-3 text-3xl' >
                     <Link to='/' onClick={handleClick} >
                         Home
                     </Link>
                 </li>
-                <li className='py-6 text-3xl' >
+                <li className='py-3 text-3xl' >
                     <a href='#about' onClick={handleClick} smooth={true} duration={500}>
                         About
                     </a>
@@ -91,23 +91,27 @@ const Navbar = () => {
                         Skills
                     </a>
                 </li>
-                <li className='py-6 text-3xl' >
+                <li className='py-3 text-3xl' >
                     <a href='#project' onClick={handleClick} smooth={true} duration={500}>
                         Projects
                     </a>
                 </li>
-                <li className='py-6 text-3xl' >
+                <li className='py-3 text-3xl' >
                     <a href='#contact' onClick={handleClick} smooth={true} duration={500}>
                         Contact
                     </a>
                 </li>
-                <li className='py-6 text-3xl' >
+                <li className='py-3 text-3xl' >
                     <Link to="/blog" onClick={handleClick} smooth={true} duration={500}>
                         Blog
                     </Link>
+
+                </li>
+                <li className='py-3 text-3xl' >
                     <Link to="/aboutMe" onClick={handleClick} smooth={true} duration={500}>
                         About Me
                     </Link>
+
                 </li>
                 <li className='py-6 text-3xl' >
                     <a onClick={handleClick} download="Resume Of Md Rakibul Islam"

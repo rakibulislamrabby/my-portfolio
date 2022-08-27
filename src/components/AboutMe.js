@@ -2,7 +2,7 @@ import React from 'react';
 import image from "../assets/profile.png"
 const AboutMe = () => {
     return (
-        <div className='w-full h-screen bg-[#0a192f]'>
+        <div className='w-full  bg-[#0a192f]'>
             <div class="hero min-h-screen">
                 <div class="hero-content flex-col lg:flex-row-reverse">
                     <img src={image} class="max-w-sm rounded-lg shadow-2xl" />

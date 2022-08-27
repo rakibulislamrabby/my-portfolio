@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 // import { Routes, Route, Link } from "react-router-dom";
 import project1 from '../assets/project1.png';
 import project2 from '../assets/project2.png';
@@ -59,12 +59,12 @@ const MyWork = () => {
                                 MERN stack Application
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href="https://micro-tech-b6d08.web.app/" target="_blank">
+                                <a href="https://khushboo-faacc.web.app/" target="_blank">
                                     <button className='hover:bg-pink-600 hover:text-white text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='https://github.com/rakibulislamrabby/micro-tech-client' target="_blank">
+                                <a href='https://github.com/rakibulislamrabby/khushboo-client' target="_blank">
                                     <button className='hover:bg-pink-600 hover:text-white text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                                         Code
                                     </button>
@@ -83,15 +83,15 @@ const MyWork = () => {
                         {/* Hover Effects */}
                         <div className='opacity-0 group-hover:opacity-100'>
                             <span className='text-2xl font-bold text-white tracking-wider'>
-                                MERN stack Application
+                                React Js Application
                             </span>
                             <div className='pt-8 text-center'>
-                                <a href="https://micro-tech-b6d08.web.app/" target="_blank">
+                                <a href=" https://health-coach-17026.web.app/" target="_blank">
                                     <button className='hover:bg-pink-600 hover:text-white text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                                         Demo
                                     </button>
                                 </a>
-                                <a href='https://github.com/rakibulislamrabby/micro-tech-client' target="_blank">
+                                <a href='https://github.com/rakibulislamrabby/health-coach' target="_blank">
                                     <button className='hover:bg-pink-600 hover:text-white text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
                                         Code
                                     </button>
